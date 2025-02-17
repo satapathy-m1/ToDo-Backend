@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Todo List</h1>
+            <div class="user-status">
+                <p id="user-name">Welcome, Guest!</p>
+                <button id="logout-btn" style="display: none;">Logout</button>
+            </div>
+        </header>
+
+        <!-- Add Todo Form -->
+        <section id="todo-form">
+            <input type="text" id="todo-title" placeholder="Enter Todo Title" />
+            <textarea id="todo-description" placeholder="Enter Todo Description"></textarea>
+            <button id="add-todo-btn">Add Todo</button>
+        </section>
+
+        <!-- Todo List Section -->
+        <section id="todo-list-section">
+            <h2>Your Todos</h2>
+            <ul id="todo-list">
+                <!-- Todo items will be dynamically added here -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
